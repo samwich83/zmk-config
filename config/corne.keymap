@@ -18,6 +18,14 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-caps-word";
+            label = "NEW_BEHAVIOR";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            continue-list = <MINUS>;
+        };
     };
 
     keymap {
@@ -31,10 +39,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE     &kp Q        &kp W           &kp E         &kp R        &kp T        &kp Y      &kp U        &kp I        &kp O            &kp P          &kp BSPC
-&mt LCTRL TAB  &mt LCMD A   &mt LEFT_ALT S  &mt LCTRL D   &mt LSHFT F  &kp G        &kp H      &mt RSHFT J  &mt RCTRL K  &mt RIGHT_ALT L  &mt RGUI SEMI  &kp SQT
-&kp LSHFT      &mt LCTRL Z  &kp X           &kp C         &kp V        &kp B        &kp N      &kp M        &kp COMMA    &kp DOT          &kp FSLH       &kp RIGHT_SHIFT
-                                            &kp LEFT_ALT  &lt 1 TAB    &kp ENTER    &kp SPACE  &mo 2        &kp RGUI
+&kp ESCAPE     &kp Q        &kp W           &kp E         &kp R        &kp T              &kp Y            &kp U        &kp I        &kp O            &kp P          &kp BSPC
+&mt LCTRL TAB  &mt LCMD A   &mt LEFT_ALT S  &mt LCTRL D   &mt LSHFT F  &kp G              &kp H            &mt RSHFT J  &mt RCTRL K  &mt RIGHT_ALT L  &mt RGUI SEMI  &kp SQT
+&kp LSHFT      &mt LCTRL Z  &kp X           &kp C         &kp V        &kp B              &kp N            &kp M        &kp COMMA    &kp DOT          &kp FSLH       &kp RIGHT_SHIFT
+                                            &kp LEFT_ALT  &lt 1 TAB    &mt LSHFT ENTER    &mt RSHFT ENTER  &mo 2        &kp RGUI
             >;
         };
 
