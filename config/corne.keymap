@@ -19,9 +19,9 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        new_behavior: new_behavior {
+        capsWord: capsWord {
             compatible = "zmk,behavior-caps-word";
-            label = "NEW_BEHAVIOR";
+            label = "CAPSWORD";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             continue-list = <MINUS>;
@@ -39,10 +39,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE     &kp Q        &kp W           &kp E         &kp R        &kp T              &kp Y            &kp U        &kp I        &kp O            &kp P          &kp BSPC
-&mt LCTRL TAB  &mt LCMD A   &mt LEFT_ALT S  &mt LCTRL D   &mt LSHFT F  &kp G              &kp H            &mt RSHFT J  &mt RCTRL K  &mt RIGHT_ALT L  &mt RGUI SEMI  &kp SQT
-&kp LSHFT      &mt LCTRL Z  &kp X           &kp C         &kp V        &kp B              &kp N            &kp M        &kp COMMA    &kp DOT          &kp FSLH       &kp RIGHT_SHIFT
-                                            &kp LEFT_ALT  &lt 1 TAB    &mt LSHFT ENTER    &mt RSHFT ENTER  &mo 2        &kp RGUI
+&kp ESCAPE     &kp Q        &kp W           &kp E         &kp R        &kp T              &kp Y            &kp U            &kp I        &kp O            &kp P          &kp BSPC
+&mt LCTRL TAB  &mt LCMD A   &mt LEFT_ALT S  &mt LCTRL D   &mt LSHFT F  &kp G              &kp H            &mt RSHFT J      &mt RCTRL K  &mt RIGHT_ALT L  &mt RGUI SEMI  &kp SQT
+&kp LSHFT      &mt LCTRL Z  &kp X           &kp C         &kp V        &kp B              &kp N            &kp M            &kp COMMA    &kp DOT          &kp FSLH       &kp RIGHT_SHIFT
+                                            &kp LEFT_ALT  &lt 1 TAB    &mt LSHFT ENTER    &mt RSHFT SPACE  &lt 2 BACKSPACE  &kp RGUI
             >;
         };
 
@@ -69,10 +69,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp GRAVE  &kp LESS_THAN  &kp AT          &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans    &trans   &kp N7        &kp NUMBER_8  &kp N9        &kp N0  &kp BSPC
-&kp TILDE  &kp MINUS      &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans    &trans   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans  &kp PIPE
-&kp LSHFT  &kp PLUS       &kp EQUAL       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans    &trans   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
-                                          &kp LGUI              &mo 3                  &kp N0    &kp RET  &trans        &kp RALT
+&kp GRAVE  &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans    &trans   &kp N7        &kp NUMBER_8  &kp N9        &kp N0  &kp BSPC
+&kp TILDE  &kp MINUS      &kp UNDERSCORE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans    &trans   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans  &kp PIPE
+&kp LSHFT  &kp PLUS       &kp EQUAL         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans    &trans   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
+                                            &kp LGUI              &mo 3                  &kp N0    &kp RET  &trans        &kp RALT
             >;
         };
 
