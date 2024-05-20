@@ -97,9 +97,9 @@
 
         adjust {
             bindings = <
-&none  &kp F1  &kp F2   &kp F3   &kp F4   &trans    &bt BT_SEL 0  &trans        &kp RS(INS)  &trans      &kp PRINTSCREEN  &trans
-&none  &kp F5  &kp F6   &kp F7   &kp F8   &trans    &bt BT_SEL 1  &kp CAPSLOCK  &trans       &trans      &trans           &trans
-&none  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &bt BT_CLR    &kp C_MENU    &trans       &bt BT_CLR  &bt BT_SEL 0     &bt BT_SEL 1
+&none  &kp F1  &kp F2   &kp F3   &kp F4   &none     &bt BT_SEL 0  &none         &kp RS(INS)  &none  &kp PRINTSCREEN  &none
+&none  &kp F5  &kp F6   &kp F7   &kp F8   &none     &bt BT_SEL 1  &kp CAPSLOCK  &none        &none  &none            &none
+&none  &kp F9  &kp F10  &kp F11  &kp F12  &none     &none         &kp C_MENU    &none        &none  &none            &bt BT_CLR
                         &trans   &trans   &tog 4    &trans        &trans        &trans
             >;
         };
