@@ -28,12 +28,11 @@
         };
 
         ent_shift_td: ent_shift_td {
-            compatible = "zmk,behavior-hold-tap";
+            compatible = "zmk,behavior-tap-dance";
             label = "ENT_SHIFT_TD";
-            bindings = <&mt LEFT_SHIFT ENTER>, <&kp ENTER>;
-
             #binding-cells = <0>;
             tapping-term-ms = <200>;
+            bindings = <&mt LEFT_SHIFT ENTER>, <&kp ENTER>;
         };
     };
 
@@ -51,7 +50,7 @@
         };
 
         menuCombo {
-            bindings = <&kp C_MENU>;
+            bindings = <&kp K_CONTEXT_MENU>;
             key-positions = <26 33>;
         };
 
