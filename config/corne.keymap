@@ -34,6 +34,46 @@
             tapping-term-ms = <200>;
             bindings = <&mt LEFT_SHIFT ENTER>, <&kp ENTER>;
         };
+
+        spc_shift_td: spc_shift_td {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SPC_SHIFT_TD";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mt RSHFT SPACE>, <&kp SPACE>;
+        };
+
+        lt2_bksp_td: lt2_bksp_td {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LT2_BKSP_TD";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&lt 2 BACKSPACE>, <&kp BACKSPACE>;
+        };
+
+        j_shift_td: j_shift_td {
+            compatible = "zmk,behavior-tap-dance";
+            label = "J_SHIFT_TD";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mt RSHFT J>, <&kp J>;
+        };
+
+        k_ctrl_td: k_ctrl_td {
+            compatible = "zmk,behavior-tap-dance";
+            label = "K_CTRL_TD";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mt RCTRL K>, <&kp K>;
+        };
+
+        l_alt_td: l_alt_td {
+            compatible = "zmk,behavior-tap-dance";
+            label = "L_ALT_TD";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mt RIGHT_ALT L>, <&kp L>;
+        };
     };
 
     combos {
@@ -71,10 +111,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE     &kp Q        &kp W           &kp E                &kp R        &kp T            &kp Y            &kp U            &kp I                 &kp O            &kp P          &kp BSPC
-&mt LCTRL TAB  &mt LCMD A   &mt LEFT_ALT S  &mt LCTRL D          &mt LSHFT F  &kp G            &kp H            &mt RSHFT J      &mt RCTRL K           &mt RIGHT_ALT L  &mt RGUI SEMI  &kp SQT
-&kp LSHFT      &mt LCTRL Z  &kp X           &kp C                &kp V        &kp B            &kp N            &kp M            &kp COMMA             &kp DOT          &kp FSLH       &kp RIGHT_SHIFT
-                                            &mt LEFT_ALT ESCAPE  &lt 1 TAB    &ent_shift_td    &mt RSHFT SPACE  &lt 2 BACKSPACE  &mt RIGHT_WIN DELETE
+&kp ESCAPE     &kp Q        &kp W           &kp E                &kp R        &kp T            &kp Y            &kp U           &kp I                 &kp O        &kp P          &kp BSPC
+&mt LCTRL TAB  &mt LCMD A   &mt LEFT_ALT S  &mt LCTRL D          &mt LSHFT F  &kp G            &kp H            &j_shift_td     &k_ctrl_td            &l_alt_td    &mt RGUI SEMI  &kp SQT
+&kp LSHFT      &mt LCTRL Z  &kp X           &kp C                &kp V        &kp B            &kp N            &kp M           &kp COMMA             &kp DOT      &kp FSLH       &kp RIGHT_SHIFT
+                                            &mt LEFT_ALT ESCAPE  &lt 1 TAB    &ent_shift_td    &spc_shift_td    &lt2_bksp_td    &mt RIGHT_WIN DELETE
             >;
         };
 
