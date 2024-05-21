@@ -26,6 +26,14 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             continue-list = <MINUS>;
         };
+
+        ent_shift_td: ent_shift_td {
+            compatible = "zmk,behavior-tap-dance";
+            label = "ENT_SHIFT_TD";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mt LEFT_SHIFT ENTER>, <&kp ENTER>;
+        };
     };
 
     combos {
@@ -63,10 +71,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE     &kp Q        &kp W           &kp E                &kp R        &kp T                             &kp Y            &kp U            &kp I                 &kp O            &kp P          &kp BSPC
-&mt LCTRL TAB  &mt LCMD A   &mt LEFT_ALT S  &mt LCTRL D          &mt LSHFT F  &kp G                             &kp H            &mt RSHFT J      &mt RCTRL K           &mt RIGHT_ALT L  &mt RGUI SEMI  &kp SQT
-&kp LSHFT      &mt LCTRL Z  &kp X           &kp C                &kp V        &kp B                             &kp N            &kp M            &kp COMMA             &kp DOT          &kp FSLH       &kp RIGHT_SHIFT
-                                            &mt LEFT_ALT ESCAPE  &lt 1 TAB    &mt LEFT_SHIFT ENTER    &mt RSHFT SPACE  &lt 2 BACKSPACE  &mt RIGHT_WIN DELETE
+&kp ESCAPE     &kp Q        &kp W           &kp E                &kp R        &kp T            &kp Y            &kp U            &kp I                 &kp O            &kp P          &kp BSPC
+&mt LCTRL TAB  &mt LCMD A   &mt LEFT_ALT S  &mt LCTRL D          &mt LSHFT F  &kp G            &kp H            &mt RSHFT J      &mt RCTRL K           &mt RIGHT_ALT L  &mt RGUI SEMI  &kp SQT
+&kp LSHFT      &mt LCTRL Z  &kp X           &kp C                &kp V        &kp B            &kp N            &kp M            &kp COMMA             &kp DOT          &kp FSLH       &kp RIGHT_SHIFT
+                                            &mt LEFT_ALT ESCAPE  &lt 1 TAB    &ent_shift_td    &mt RSHFT SPACE  &lt 2 BACKSPACE  &mt RIGHT_WIN DELETE
             >;
         };
 
