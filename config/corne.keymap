@@ -26,14 +26,6 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             continue-list = <MINUS>;
         };
-
-        ent_shift_td: ent_shift_td {
-            compatible = "zmk,behavior-tap-dance";
-            label = "ENT_SHIFT_TD";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&mt LEFT_SHIFT ENTER>, <&kp ENTER>;
-        };
     };
 
     combos {
