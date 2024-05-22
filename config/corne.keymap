@@ -19,6 +19,14 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
+        capsWord: capsWord {
+            compatible = "zmk,behavior-caps-word";
+            label = "CAPSWORD";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            continue-list = <MINUS>;
+        };
+
         ent_shift_td: ent_shift_td {
             compatible = "zmk,behavior-tap-dance";
             label = "ENT_SHIFT_TD";
