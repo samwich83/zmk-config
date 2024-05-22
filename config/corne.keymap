@@ -69,8 +69,8 @@
 
         l_alt_ht: l_alt_ht {
             compatible = "zmk,behavior-hold-tap";
-            label = "L_ALT_HT";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
+            flavor = "balanced";
             tapping-term-ms = <200>;
             quick-tap-ms = <200>;
             bindings = <&mt RIGHT_ALT L>, <&kp L>;
