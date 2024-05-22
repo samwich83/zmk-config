@@ -19,6 +19,14 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
+        capsWord: capsWord {
+            compatible = "zmk,behavior-caps-word";
+            label = "CAPSWORD";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            continue-list = <MINUS>;
+        };
+
         ent_shift_td: ent_shift_td {
             compatible = "zmk,behavior-tap-dance";
             label = "ENT_SHIFT_TD";
@@ -59,11 +67,12 @@
             bindings = <&mt RCTRL K>, <&kp K>;
         };
 
-        l_alt_td: l_alt_td {
-            compatible = "zmk,behavior-tap-dance";
-            label = "L_ALT_TD";
+        l_alt_ht: l_alt_ht {
+            compatible = "zmk,behavior-hold-tap";
+            label = "L_ALT_HT";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
             bindings = <&mt RIGHT_ALT L>, <&kp L>;
         };
     };
@@ -104,7 +113,7 @@
 
             bindings = <
 &kp ESCAPE     &kp Q        &kp W           &kp E                &kp R        &kp T            &kp Y            &kp U           &kp I                 &kp O        &kp P          &kp BSPC
-&mt LCTRL TAB  &mt LCMD A   &mt LEFT_ALT S  &mt LCTRL D          &mt LSHFT F  &kp G            &kp H            &j_shift_td     &k_ctrl_td            &l_alt_td    &mt RGUI SEMI  &kp SQT
+&mt LCTRL TAB  &mt LCMD A   &mt LEFT_ALT S  &mt LCTRL D          &mt LSHFT F  &kp G            &kp H            &j_shift_td     &k_ctrl_td            &l_alt_ht    &mt RGUI SEMI  &kp SQT
 &kp LSHFT      &mt LCTRL Z  &kp X           &kp C                &kp V        &kp B            &kp N            &kp M           &kp COMMA             &kp DOT      &kp FSLH       &kp RIGHT_SHIFT
                                             &mt LEFT_ALT ESCAPE  &lt 1 TAB    &ent_shift_td    &spc_shift_td    &lt2_bksp_td    &mt RIGHT_WIN DELETE
             >;
