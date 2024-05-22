@@ -67,13 +67,21 @@
             bindings = <&mt RCTRL K>, <&kp K>;
         };
 
-        l_alt_ht: l_alt_ht {
+        l_alt_td: l_alt_td {
+            compatible = "zmk,behavior-tap-dance";
+            label = "L_ALT_TD";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mt RIGHT_ALT L>, <&kp L>;
+        };
+
+        myht: my_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <400>;
             quick-tap-ms = <200>;
-            bindings = <&mt RIGHT_ALT L>, <&kp L>;
+            bindings = <&kp>, <&kp>;
         };
     };
 
@@ -112,9 +120,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE     &kp Q        &kp W           &kp E                &kp R        &kp T            &kp Y            &kp U           &kp I                 &kp O        &kp P          &kp BSPC
-&mt LCTRL TAB  &mt LCMD A   &mt LEFT_ALT S  &mt LCTRL D          &mt LSHFT F  &kp G            &kp H            &j_shift_td     &k_ctrl_td            &l_alt_ht    &mt RGUI SEMI  &kp SQT
-&kp LSHFT      &mt LCTRL Z  &kp X           &kp C                &kp V        &kp B            &kp N            &kp M           &kp COMMA             &kp DOT      &kp FSLH       &kp RIGHT_SHIFT
+&kp ESCAPE     &kp Q        &kp W           &kp E                &kp R        &kp T            &kp Y            &kp U           &kp I                 &kp O                &kp P          &kp BSPC
+&mt LCTRL TAB  &mt LCMD A   &mt LEFT_ALT S  &mt LCTRL D          &mt LSHFT F  &kp G            &kp H            &j_shift_td     &k_ctrl_td            &myht RIGHT_ALT L    &mt RGUI SEMI  &kp SQT
+&kp LSHFT      &mt LCTRL Z  &kp X           &kp C                &kp V        &kp B            &kp N            &kp M           &kp COMMA             &kp DOT              &kp FSLH       &kp RIGHT_SHIFT
                                             &mt LEFT_ALT ESCAPE  &lt 1 TAB    &ent_shift_td    &spc_shift_td    &lt2_bksp_td    &mt RIGHT_WIN DELETE
             >;
         };
