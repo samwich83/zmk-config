@@ -40,6 +40,7 @@
             label = "SPC_SHIFT_TD";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
             bindings = <&mt RSHFT SPACE>, <&kp SPACE>;
         };
 
@@ -48,6 +49,7 @@
             label = "LT2_BKSP_TD";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
             bindings = <&lt 2 BACKSPACE>, <&kp BACKSPACE>;
         };
 
@@ -56,6 +58,7 @@
             label = "J_SHIFT_TD";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
             bindings = <&mt RSHFT J>, <&kp J>;
         };
 
@@ -64,6 +67,7 @@
             label = "K_CTRL_TD";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
             bindings = <&mt RCTRL K>, <&kp K>;
         };
 
@@ -72,6 +76,7 @@
             label = "L_ALT_TD";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
             bindings = <&mt RIGHT_ALT L>, <&kp L>;
         };
     };
