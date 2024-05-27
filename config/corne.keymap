@@ -49,7 +49,7 @@
             flavor = "balanced";
             tapping-term-ms = <400>;
             quick-tap-ms = <200>;
-            bindings = <&mo>, <&kp>;
+            bindings = <&mo>, <&bkspc_del>;
         };
     };
 
@@ -91,7 +91,7 @@
 &kp ESCAPE     &kp Q        &kp W           &kp E                &kp R        &kp T                     &kp Y                &kp U                   &kp I                 &kp O                &kp P          &bkspc_del
 &mt LCTRL TAB  &mt LCMD A   &mt LEFT_ALT S  &mt LCTRL D          &mt LSHFT F  &kp G                     &kp H                &myht RSHFT J           &myht RCTRL K         &myht RIGHT_ALT L    &mt RGUI SEMI  &kp SQT
 &kp LSHFT      &mt LCTRL Z  &kp X           &kp C                &kp V        &kp B                     &kp N                &kp M                   &kp COMMA             &kp DOT              &kp FSLH       &kp RIGHT_SHIFT
-                                            &mt LEFT_ALT ESCAPE  &lt 1 TAB    &myht LEFT_SHIFT ENTER    &myht RSHFT SPACE    &lt_bkspc 2 BACKSPACE   &mt RIGHT_WIN DELETE
+                                            &mt LEFT_ALT ESCAPE  &lt 1 TAB    &myht LEFT_SHIFT ENTER    &myht RSHFT SPACE    &lt_bkspc 2 bkspc_del   &mt RIGHT_WIN DELETE
             >;
         };
 
