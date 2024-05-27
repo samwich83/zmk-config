@@ -26,14 +26,6 @@
             continue-list = <MINUS>;
         };
 
-        lt2_bksp_td: lt2_bksp_td {
-            compatible = "zmk,behavior-tap-dance";
-            label = "LT2_BKSP_TD";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&lt 2 BACKSPACE>, <&bkspc_del>;
-        };
-
         myht: my_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
