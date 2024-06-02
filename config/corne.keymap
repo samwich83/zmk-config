@@ -161,13 +161,13 @@
         raise {
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ 
-&kp GRAVE  &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &none     &none    &kp N7        &kp NUMBER_8  &kp N9        &kp N0  &kp BSPC
+     &kp GRAVE     &kp LT        &kp GT        &kp LBRC      &kp RBRC      &none           &none         &kp N7        &kp N8        &kp N9        &kp N0        &kp BSPC
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-&kp TILDE  &kp MINUS      &kp UNDERSCORE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none     &none    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none   &kp PIPE
+     &kp TILDE     &kp MINUS     &kp UNDER     &kp LPAR      &kp RPAR      &none           &none         &kp N4        &kp N5        &kp N6        &none         &kp PIPE
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-&kp LSHFT  &kp PLUS       &kp EQUAL         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none     &none    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none   &none
+     &kp LSHFT     &kp PLUS      &kp EQUAL     &kp LBKT      &kp RBKT      &none           &none         &kp N1        &kp N2        &kp N3        &none         &none
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                            &kp LGUI              &mo 3                  &kp N0    &kp RET  &trans        &kp RALT
+                                               &kp LGUI      &mo 3         &kp N0          &kp RET       &trans        &kp RALT
 //                                           ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────╯
             >;
         };
