@@ -143,10 +143,9 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &mt LCTRL TAB  &hml LGUI A   &hml LALT S   &hml LCTRL D  &hml LSHFT F  &kp G           &kp H         &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMI &kp SQT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-//     &kp LSHFT     &mt LCTRL Z   &kp X         &kp C         &kp V         &kp B           &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH      &kp RSHFT
-&kp LSHFT      &mt LCTRL Z   &kp X            &kp C                 &kp V         &kp B                     &kp N                &kp M                &kp COMMA             &kp DOT             &kp FSLH        &kp RIGHT_SHIFT
+     &kp LSHFT     &mt LCTRL Z   &kp X         &kp C         &kp V         &kp B           &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH      &kp RSHFT
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-//                                               &mt LA ESC    &lt 1 TAB     &myht LS RET    &myht RS SPACE &lt_bkspc 2 0        &mt RGUI DEL
+//                                               &mt LALT ESC    &lt 1 TAB     &myht LSHFT RET    &myht RSHFT SPACE &lt_bkspc 2 0        &mt RGUI DEL
                                               &mt LEFT_ALT ESCAPE   &lt 1 TAB     &myht LEFT_SHIFT ENTER    &myht RSHFT SPACE    &lt_bkspc 2 0        &mt RIGHT_WIN DELETE
 //                                           ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────╯
 
