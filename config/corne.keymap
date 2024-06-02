@@ -43,12 +43,12 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <400>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <250>;   // change to 250
+            quick-tap-ms = <175>;      // change to 175
             bindings = <&kp>, <&kp>;
         };
 
-        lt_bkspc: layer_tap_bkspc  {   // rename for brevity
+        lt_bkspc: layer_tap_bkspc {   // rename for brevity
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
@@ -84,7 +84,7 @@
             quick-tap-ms = <175>;                // repeat on tap-into-hold
             require-prior-idle-ms = <150>;
 
-            hold-trigger-key-positions = <KEYS_R THUMBS>;  // remove thumbs so alt tab works better?
+            hold-trigger-key-positions = <KEYS_R>;  // remove thumbs so alt tab works better?
             hold-trigger-on-release;
         };
 
