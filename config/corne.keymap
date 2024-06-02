@@ -36,7 +36,7 @@
             label = "CAPSWORD";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            continue-list = <MINUS>;
+            continue-list = <MINUS BACKSPACE>;
         };
 
         myht: my_hold_tap {     // rename for brevity
@@ -112,22 +112,22 @@
 
         capsLockCombo {
             bindings = <&kp CAPSLOCK>;
-            key-positions = <28 31>;
+            key-positions = <28 31>;  // V + M
         };
 
         capsWordCombo {
             bindings = <&capsWord>;
-            key-positions = <27 32>;
+            key-positions = <27 32>;  // C + ,
         };
 
         menuCombo {
             bindings = <&kp K_CONTEXT_MENU>;
-            key-positions = <26 33>;
+            key-positions = <26 33>;  // X + .
         };
 
         escCombo {
             bindings = <&kp ESCAPE>;
-            key-positions = <3 4>;
+            key-positions = <3 4>;    // E + R
         };
     };
 
