@@ -36,10 +36,10 @@
             label = "CAPSWORD";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            continue-list = <MINUS BACKSPACE>;
+            continue-list = <MINUS>;
         };
 
-        myht: my_hold_tap {     // can be deleted
+        myht: my_hold_tap {     // rename for brevity
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
@@ -48,13 +48,13 @@
             bindings = <&kp>, <&kp>;
         };
 
-        lt_bkspc: layer_tap_backspace {
+        lt_bkspc: layer_tap_backspace {   // rename for brevity
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <250>;  // change to 200 or 250
             quick-tap-ms = <175>;     // change to 175
-            bindings = <&mo>, <&bkspc_del>;
+            bindings = <&mo>, <&bkspc_del>;  // will still need to pass 2nd arg when envoking
         };
 
 /*
