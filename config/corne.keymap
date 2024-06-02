@@ -85,7 +85,7 @@
             require-prior-idle-ms = <150>;
 
             hold-trigger-key-positions = <KEYS_R THUMBS>;  // remove thumbs so alt tab works better?
-            hold-trigger-on-release;
+            //hold-trigger-on-release;    // maybe this is an issue
         };
 
         hmr: homerow_mods_right {
@@ -99,7 +99,7 @@
             require-prior-idle-ms = <150>;
 
             hold-trigger-key-positions = <KEYS_L THUMBS>;
-            hold-trigger-on-release;
+            //hold-trigger-on-release;    // maybe this is an issue
         };
     };
 
