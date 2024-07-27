@@ -128,7 +128,7 @@
         escCombo {
             bindings = <&kp ESCAPE>;
             key-positions = <3 4>;    // E + R
-            require-prior-idle-ms = 50
+            require-prior-idle-ms = <50>;
         };
     };
 
