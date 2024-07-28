@@ -21,6 +21,11 @@
 #define KEYS_R   6  7  8  9 10 11 18 19 20 21 22 23 30 31 32 33 34 35
 #define THUMBS  36 37 38 39 40 41
 
+#define BASE   0
+#define LOWER  1
+#define RAISE  2
+#define ADJUST 3
+
 / {
     behaviors {
         bkspc_del: backspace_delete {
@@ -156,7 +161,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &none         &kp PG_DN     &kp LEFT      &kp DOWN      &kp RIGHT     &none           &none         &kp DOLLAR    &kp PERCENT   &kp CARET     &none         &kp BSLH
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &tog base     &kp BSPC      &none         &kp ESC       &kp SPC       &none           &none         &kp EXCL      &kp AT_SIGN  &kp HASH       &none         &tog base
+     &tog BASE     &kp BSPC      &none         &kp ESC       &kp SPC       &none           &none         &kp EXCL      &kp AT_SIGN  &kp HASH       &none         &tog BASE
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                &kp C_PREV    &trans        &kp C_PP        &kp C_PP      &mo 3         &kp C_NEXT
 //                                           ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────╯
