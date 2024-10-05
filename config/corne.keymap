@@ -92,7 +92,7 @@
             flavor = "balanced";
             tapping-term-ms = <250>;
             quick-tap-ms = <175>;                // repeat on tap-into-hold
-            require-prior-idle-ms = <100>;       // decrease if having cross hand false negatives
+            require-prior-idle-ms = <75>;       // decrease if having cross hand false negatives
 
             //hold-trigger-key-positions = <KEYS_R THUMBS>;  // remove thumbs so alt tab works better?
             hold-trigger-on-release;
@@ -106,7 +106,7 @@
             flavor = "balanced";
             tapping-term-ms = <250>;
             quick-tap-ms = <175>;
-            require-prior-idle-ms = <100>;       // decrease if having cross hand false negatives
+            require-prior-idle-ms = <75>;       // decrease if having cross hand false negatives
 
             //hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;
@@ -176,7 +176,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp TILDE     &kp MINUS     &kp UNDER     &kp LPAR      &kp RPAR      &none           &none         &kp N4        &kp N5        &kp N6        &none         &kp PIPE
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp LSHFT     &kp PLUS      &kp EQUAL     &kp LBKT      &kp RBKT      &none           &none         &kp N1        &kp N2        &kp N3        &none         &kp RSHFT
+     &kp LSHFT     &kp PLUS      &kp EQUAL     &kp LBKT      &kp RBKT      &none           &none         &kp N1        &kp N2        &kp N3        &kp FLSH      &kp RSHFT
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                &kp LGUI      &mo 3         &kp N0          &kp C_PP      &trans        &kp C_NEXT
 //                                           ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────╯
